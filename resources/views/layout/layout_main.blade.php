@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Mechanics HTML Template | About Us</title>
+    <title>Mechanics HTML Template | Homepage</title>
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -52,10 +52,15 @@
                                     <li><a href="#">English</a></li>
                                     <li><a href="#">German</a></li>
                                     <li><a href="#">Arabic</a></li>
+                                    <li><a href="#">Hindi</a></li>
                                 </ul>
                             </li>
                         </ul>
-
+                        <ul class="social-icon-one">
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                        </ul>
                     </div>
 
                 </div>
@@ -87,16 +92,31 @@
 
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li><a href="index.html">Home</a>
+                                    <li class="current dropdown"><a href="#">Home</a>
+                                        <ul>
+                                            <li><a href="index.html">Homepage One</a></li>
+                                            <li><a href="index-2.html">Homepage Two</a></li>
+                                        </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">About</a>
                                         <ul>
                                             <li><a href="about.html">About Us</a></li>
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="clients.html">Clients</a></li>
+                                            <li><a href="faq.html">Faq</a></li>
+                                            <li><a href="price.html">Price</a></li>
                                             <li><a href="we-do.html">What We Do</a></li>
                                         </ul>
                                     </li>
-                                    <li class="current"><a href="services.html">Services</a></li>
+                                    <li><a href="{{asset('/services')}}">Services</a></li>
                                     <li><a href="gallery.html">Gallery</a></li>
+                                    <li class="dropdown"><a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog-standard.html">Blog Standard</a></li>
+                                            <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="contact.html">Contact us</a></li>
                                 </ul>
                             </div>
@@ -133,16 +153,31 @@
 
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix">
-                                <li><a href="index.html">Home</a>
+                                <li class="current dropdown"><a href="#">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Homepage One</a></li>
+                                        <li><a href="index-2.html">Homepage Two</a></li>
+                                    </ul>
                                 </li>
-                                <li class="current dropdown"><a href="#">About</a>
+                                <li class="dropdown"><a href="#">About</a>
                                     <ul>
                                         <li><a href="about.html">About Us</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="clients.html">Clients</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="price.html">Price</a></li>
                                         <li><a href="we-do.html">What We Do</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
+                                <li class="dropdown"><a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="blog-standard.html">Blog Standard</a></li>
+                                        <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="contact.html">Contact us</a></li>
                             </ul>
                         </div>
@@ -155,19 +190,9 @@
 
     </header>
     <!--End Main Header -->
-
-    <!--Page Title-->
-    <section class="page-title" style="background-image:url({{asset('images/img/bg.jpg')}})">
-        <div class="auto-container">
-            <h1>TEST</h1>
-            <div class="text"> If It Runs On Diesel…We’ll Fix It!</div>
-        </div>
-    </section>
-    <!--End Page Title-->
     @yield('content')
-
     <!--Main Footer-->
-    <footer class="main-footer alternate">
+    <footer class="main-footer">
         <!--Widgets Section-->
         <div class="widgets-section">
             <div class="auto-container">
