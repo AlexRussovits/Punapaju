@@ -159,7 +159,7 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url({{asset('images/img/bg.jpg')}})">
         <div class="auto-container">
-            <h1>{{$title}}</h1>
+            <h1>TEST</h1>
             <div class="text"> If It Runs On Diesel…We’ll Fix It!</div>
         </div>
     </section>
