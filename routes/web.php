@@ -13,4 +13,7 @@
 
 Route::get('/', 'guestController@index');
 Route::get('/services', 'guestController@services');
+Route::get('/service/{id}', 'guestController@serviceOne');
+
+
 

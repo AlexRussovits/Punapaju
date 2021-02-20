@@ -9,31 +9,10 @@
             <div class="slide" style="background-image:url(images/main-slider/image-1.jpg)">
                 <div class="auto-container">
                     <div class="content">
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
                         <h2>Building Your Trust <span>Since 1968.</span></h2>
                     </div>
                 </div>
             </div>
-
-            <div class="slide" style="background-image:url(images/main-slider/image-2.jpg)">
-                <div class="auto-container">
-                    <div class="content">
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <h2>Building Your Trust <span>Since 1968.</span></h2>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
     <!--End Main Slider-->
@@ -41,74 +20,6 @@
     <!--Services Section-->
     <section class="services-section" style="background-image:url(images/resource/image-1.png)">
         <div class="auto-container">
-
-            <!--Upper Section-->
-            <div class="upper-section">
-                <div class="row clearfix">
-
-                    <!--Services Block-->
-                    <div class="services-block col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="images/resource/service-1.jpg" alt="" />
-                                    <div class="overlay-box">
-                                        <div class="overlay-inner">
-                                            <div class="icon-box">
-                                                <div class="icon flaticon-funnel"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="services.html">Full Service</a></h3>
-                                <div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Services Block-->
-                    <div class="services-block col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="images/resource/service-2.jpg" alt="" />
-                                    <div class="overlay-box">
-                                        <div class="overlay-inner">
-                                            <div class="icon-box">
-                                                <div class="icon flaticon-funnel"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="services.html">AC Repair</a></h3>
-                                <div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Services Block-->
-                    <div class="services-block col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="images/resource/service-3.jpg" alt="" />
-                                    <div class="overlay-box">
-                                        <div class="overlay-inner">
-                                            <div class="icon-box">
-                                                <div class="icon flaticon-funnel"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="services.html">Oil Change</a></h3>
-                                <div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
             <!--Lower Section-->
             <div class="lower-section">
                 <div class="row clearfix">
@@ -139,28 +50,6 @@
         </div>
     </section>
     <!--End Services Section-->
-
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="image-layer" style="background-image:url(images/background/1.jpg)"></div>
-        <div class="auto-container">
-            <h2>Your Automotive Repair Experts.<span> Where to find us?</span></h2>
-            <div class="map-box">
-                <!--Map Canvas-->
-                <div class="map-canvas"
-                     data-zoom="12"
-                     data-lat="-37.817085"
-                     data-lng="144.955631"
-                     data-type="roadmap"
-                     data-hue="#ffc400"
-                     data-title="Envato"
-                     data-icon-path="images/icons/map-marker.png"
-                     data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Map Section -->
 
     <!--Services Section Two-->
     <section class="services-section-two">
@@ -327,88 +216,26 @@
     </section>
     <!--End Accordian Section-->
 
-    <!--Expert Section-->
-    <section class="expert-section" style="background-image:url(images/background/2.png)">
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="image-layer" style="background-image:url(images/background/1.jpg)"></div>
         <div class="auto-container">
-            <!--Sec Title-->
-            <div class="sec-title centered">
-                <h2>Our Team of Experts</h2>
-                <div class="text">If It Runs On Diesel…We’ll Fix It!</div>
+            <h2>Your Automotive Repair Experts.<span> Where to find us?</span></h2>
+            <div class="map-box">
+                <!--Map Canvas-->
+                <div class="map-canvas"
+                     data-zoom="12"
+                     data-lat="-37.817085"
+                     data-lng="144.955631"
+                     data-type="roadmap"
+                     data-hue="#ffc400"
+                     data-title="Envato"
+                     data-icon-path="images/icons/map-marker.png"
+                     data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+                </div>
             </div>
-
-            <div class="row clearfix">
-
-                <!--Team Block-->
-                <div class="team-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <a href="team.html"><img src="images/resource/team-1.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="team.html">Jacob Reyes</a></h3>
-                            <div class="designation">Master Technician</div>
-                            <div class="text">This is Photoshop's version  of Lorem]psukroin nibh vel velit auctor aliquet.</div>
-                            <a href="team.html" class="theme-btn btn-style-two">read more</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Team Block-->
-                <div class="team-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <a href="#"><img src="images/resource/team-2.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="team.html">Jacob Reyes</a></h3>
-                            <div class="designation">Master Technician</div>
-                            <div class="text">This is Photoshop's version  of Lorem]psukroin nibh vel velit auctor aliquet.</div>
-                            <a href="team.html" class="theme-btn btn-style-two">read more</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Team Block-->
-                <div class="team-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <a href="#"><img src="images/resource/team-3.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="team.html">Jacob Reyes</a></h3>
-                            <div class="designation">Master Technician</div>
-                            <div class="text">This is Photoshop's version  of Lorem]psukroin nibh vel velit auctor aliquet.</div>
-                            <a href="team.html" class="theme-btn btn-style-two">read more</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
     </section>
-    <!--End Expert Section-->
+    <!-- End Map Section -->
 
-    <!--Clients Section-->
-    <section class="clients-section" style="background-image:url(images/background/1.jpg)">
-        <div class="auto-container">
-
-            <div class="sponsors-outer">
-                <!--Sponsors Carousel-->
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-    <!--End Clients Section-->
 @endsection

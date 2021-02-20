@@ -15,7 +15,7 @@
                         <div class="lower-content">
                             <h3><a href="1.html">{{$service->title}}</a></h3>
                             <div class="text">{{$service->description}}</div>
-                            <a href="1.html" class="theme-btn btn-style-two">Читать подробнее</a>
+                            <a href="{{asset('/service/' . $service->id)}}" class="theme-btn btn-style-two">Читать подробнее</a>
                         </div>
                     </div>
                 </div>

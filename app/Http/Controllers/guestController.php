@@ -15,11 +15,18 @@ class guestController extends Controller
         $description = 'The Best Services Forever';
         $services = Service::orderBy('id','desc')->get();
 
-
-
-
         return view('services', compact('title','description', 'services'));
     }
 
+    public function serviceOne($id) {
+        $service = Service::find($id);
+        if(!empty($service)) {
+            $title = $service->title;
+            $description = $service->description;
+            return view('service_one', compact('title','description', 'service'));
+        }else {
+            return abort(404);
+        }
+    }
 
 }
