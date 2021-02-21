@@ -57,9 +57,9 @@
                     <!--Nav Column-->
                     <div class="nav-column col-lg-6 col-md-12 col-sm-12">
                         <ul class="footer-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="services.html">services</a></li>
-                            <li><a href="gallery.html">gallery</a></li>
+                            <li><a href="{{asset('/')}}">Home</a></li>
+                            <li><a href="{{asset('/services')}}">services</a></li>
+                            <li><a href={{asset('/gallery')}}>gallery</a></li>
                             <li><a href="contact.html">contact</a></li>
                         </ul>
                     </div>

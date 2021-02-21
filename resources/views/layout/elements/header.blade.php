@@ -44,7 +44,7 @@
                             <ul class="navigation clearfix">
                                 <li><a href="{{asset('/')}}">Home</a></li>
                                 <li><a href="{{asset('/services')}}">Services</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href={{asset('/gallery')}}>Gallery</a></li>
                                 <li><a href="contact.html">Contact us</a></li>
                             </ul>
                         </div>
@@ -83,7 +83,7 @@
                         <ul class="navigation clearfix">
                             <li><a href="{{asset('/')}}">Home</a></li>
                             <li><a href="{{asset('/services')}}">Services</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="{{asset('/gallery')}}">Gallery</a></li>
                             <li><a href="contact.html">Contact us</a></li>
                         </ul>
                     </div>
