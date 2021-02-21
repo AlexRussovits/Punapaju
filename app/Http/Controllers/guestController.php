@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Contact;
 use App\Gallery;
 use App\Service;
 use Illuminate\Http\Request;
@@ -37,13 +38,45 @@ class guestController extends Controller
     public function gallery()
     {
         $title = 'Our Gallery';
+        $description = 'The Best Services Forever';
         $galleries= Gallery::orderBy('id', 'desc')->get();
-        return view('gallery', compact('galleries', 'title'));
+        return view('gallery', compact('galleries', 'title', 'description'));
     }
 
     public function appointment() {
         $title = 'Appointment';
+        $description = 'The Best Services Forever';
+        return view('appointment', compact('title', 'description'));
+    }
 
-        return view('appointment', compact('title'));
+    //Данный метод служит для отображения страницы
+    public function contacts(){
+        $title = 'Contact';
+        $description = 'The Best Services Forever';
+        return view('contacts', compact('title', 'description'));
+    }
+
+    //Каждый метод может получить $request
+    //Там храниться вся информация, а значит и то, что нам придет после отправки формы
+    public function sendContact(Request $request){
+        //У каждого request есть метод валидации, это поможет нам проверить данные
+        //Если, что-то пойдет не так, то он отправит на пред. страницу с ошибкой, которая будет обработанна
+        $request->validate([
+           'email'=> 'email|max:120|required',
+           'name'=> 'max:120|required',
+           'text'=> 'required',
+        ]);
+
+        //Берем модель и на ее основе делаем запись
+        if(Contact::create([
+            'email'=> $request->input('email'),
+            'name'=> $request->input('name'),
+            'text'=> $request->input('text'),
+        ])){
+            //Отправка редиректа на страницу контактов и запись значения сессии в позицию true (это поможет показать надпись об удачной отправки).
+            return redirect('/contacts')->with(['success_delivery' => true]);
+        }else{
+            abort(500);
+        }
     }
 }

@@ -1,4 +1,4 @@
-@extends('layout.layout_gallery')
+@extends('layout.layout_second')
 @section('content')
 
 

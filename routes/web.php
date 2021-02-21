@@ -16,6 +16,10 @@ Route::get('/services', 'guestController@services');
 Route::get('/service/{id}', 'guestController@serviceOne');
 Route::get('/gallery', 'guestController@gallery');
 Route::get('/appointment', 'guestController@appointment');
+Route::get('/contacts', 'guestController@contacts');
+
+//Make post route
+Route::post('/send-contact', 'guestController@sendContact');
 
 
 

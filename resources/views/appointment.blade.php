@@ -1,4 +1,4 @@
-@extends('layout.layout_appointment')
+@extends('layout.layout_second')
 @section('content')
 
     <!--Contact Form Section-->
