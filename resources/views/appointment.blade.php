@@ -1,10 +1,13 @@
 @extends('layout.layout_second')
 @section('content')
 
-    <!--Contact Form Section-->
     <section class="contact-form-section">
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>Get in touch!</h2>
+            </div>
 
-            <!--Contact Form-->
+        <!--Contact Form-->
             <div class="contact-form">
                 <form method="post" action="sendemail.php" id="contact-form">
                     <div class="row clearfix">
@@ -20,7 +23,7 @@
                             <input type="text" name="phoneNumber" value="" placeholder="Phone Number" required>
                         </div>
 
-                        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <input type="text" name="bookingDate" value="" placeholder="Booking Date" required>
                         </div>
 
@@ -38,8 +41,5 @@
 
         </div>
     </section>
-
-
-
 
 @endsection
