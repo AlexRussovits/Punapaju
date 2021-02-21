@@ -40,4 +40,10 @@ class guestController extends Controller
         $galleries= Gallery::orderBy('id', 'desc')->get();
         return view('gallery', compact('galleries', 'title'));
     }
+
+    public function appointment() {
+        $title = 'Appointment';
+
+        return view('appointment', compact('title'));
+    }
 }

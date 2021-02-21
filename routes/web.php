@@ -15,7 +15,7 @@ Route::get('/', 'guestController@index');
 Route::get('/services', 'guestController@services');
 Route::get('/service/{id}', 'guestController@serviceOne');
 Route::get('/gallery', 'guestController@gallery');
-Route::get('/contacts', 'guestController@contacts');
+Route::get('/appointment', 'guestController@appointment');
 
 
 

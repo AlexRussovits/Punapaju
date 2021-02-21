@@ -54,7 +54,7 @@
                 </div>
                 <!--Option Box-->
                 <div class="btn-box">
-                    <a href="#" class="theme-btn btn-style-one">Make a Appoinment</a>
+                    <a href="{{asset('/appointment')}}" class="theme-btn btn-style-one">Make a Appointment</a>
                 </div>
             </div>
         </div>

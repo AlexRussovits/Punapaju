@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 20 2021 г., 14:54
+-- Время создания: Фев 21 2021 г., 17:33
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -55,6 +55,18 @@ CREATE TABLE `gallery` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `gallery`
+--
+
+INSERT INTO `gallery` (`id`, `img`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'storage/1.jpg', NULL, NULL, NULL),
+(2, 'storage/6.jpg', NULL, NULL, NULL),
+(3, 'storage/2.jpg', NULL, NULL, NULL),
+(4, 'storage/3.jpg', NULL, NULL, NULL),
+(5, 'storage/5.jpg', NULL, NULL, NULL),
+(6, 'storage/4.jpg', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -121,7 +133,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT для таблицы `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `services`
