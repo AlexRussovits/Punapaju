@@ -20,6 +20,7 @@ Route::get('/contacts', 'guestController@contacts');
 
 //Make post route
 Route::post('/send-contact', 'guestController@sendContact');
+Route::post('/send-appointment', 'guestController@sendAppointment');
 
 
 

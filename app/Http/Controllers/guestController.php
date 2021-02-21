@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Appointment;
 use App\Contact;
 use App\Gallery;
 use App\Service;
@@ -47,6 +48,28 @@ class guestController extends Controller
         $title = 'Appointment';
         $description = 'The Best Services Forever';
         return view('appointment', compact('title', 'description'));
+    }
+
+    public function sendAppointment(Request $request) {
+        $request->validate([
+            'email'=> 'email|max:120|required',
+            'name'=> 'max:120|required',
+            'text'=> 'required',
+            'index_number_auto' => 'max:10|required',
+            'phone_number' => 'max:12|required'
+        ]);
+
+        if(Appointment::create([
+            'email'=> $request->input('email'),
+            'name'=> $request->input('name'),
+            'text'=> $request->input('text'),
+            'index_number_auto'=> $request->input('index_number_auto'),
+            'phone_number'=> $request->input('phone_number')
+        ])){
+            return redirect('/appointment')->with(['success_delivery'=>true]);
+        }else{
+            abort(505);
+        }
     }
 
     //Данный метод служит для отображения страницы

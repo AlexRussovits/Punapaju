@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 21 2021 г., 20:49
+-- Время создания: Фев 21 2021 г., 23:24
 -- Версия сервера: 10.3.22-MariaDB
--- Версия PHP: 7.4.5
+-- Версия PHP: 7.1.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- База данных: `punapaju`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `appointment`
+--
+
+CREATE TABLE `appointment` (
+  `id` int(11) NOT NULL,
+  `name` varchar(120) NOT NULL,
+  `email` varchar(120) NOT NULL,
+  `phone_number` varchar(12) NOT NULL,
+  `index_number_auto` varchar(10) NOT NULL,
+  `text` text NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deteletd_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `appointment`
+--
+
+INSERT INTO `appointment` (`id`, `name`, `email`, `phone_number`, `index_number_auto`, `text`, `created_at`, `updated_at`, `deteletd_at`) VALUES
+(2, 'Andrey Ryzhikov', 'andrey.ryzhikov@email.com', '+37256344868', '099 BTT', 'Проблема с мотором', '2021-02-21 18:18:12', '2021-02-21 18:18:12', NULL);
 
 -- --------------------------------------------------------
 
@@ -125,6 +150,12 @@ INSERT INTO `services` (`id`, `title`, `description`, `image`, `descr_long`, `cr
 --
 
 --
+-- Индексы таблицы `appointment`
+--
+ALTER TABLE `appointment`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `category`
 --
 ALTER TABLE `category`
@@ -151,6 +182,12 @@ ALTER TABLE `services`
 --
 -- AUTO_INCREMENT для сохранённых таблиц
 --
+
+--
+-- AUTO_INCREMENT для таблицы `appointment`
+--
+ALTER TABLE `appointment`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT для таблицы `category`
