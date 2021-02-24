@@ -10,6 +10,7 @@
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,6 +50,7 @@
 <script src="js/map-script.js"></script>
 <!--End Google Map APi-->
 <script src="js/script.js"></script>
+<script src="path/to/lightbox.js"></script>
 
 </body>
 </html>

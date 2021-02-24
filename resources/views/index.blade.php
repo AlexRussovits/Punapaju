@@ -18,7 +18,7 @@
     <!--End Main Slider-->
 
     <!--Services Section-->
-    <section class="services-section" style="background-image:url(images/resource/image-1.png)">
+    <section class="services-section pt-5" style="background-image:url(images/resource/image-1.png)">
         <div class="auto-container">
             <!--Lower Section-->
             <div class="lower-section">
@@ -29,7 +29,6 @@
                         <div class="inner-column">
                             <div class="image">
                                 <img src="images/resource/car.jpg" alt="" />
-                                <span class="icon"><img src="images/resource/duty.png" alt="" /></span>
                             </div>
                         </div>
                     </div>
@@ -39,8 +38,10 @@
                         <div class="inner-column">
                             <h2>Don’t Let Your Truck Leak Oil, Make It Sweat Horse Power!</h2>
                             <h3>If It Runs On Diesel…We’ll Fix It!</h3>
-                            <div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </div>
-                            <a href="about.html" class="theme-btn btn-style-two">read more</a>
+                            <div class="text">This is Photoshop's version  of Lorem Ipsum.
+                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </div>
                         </div>
                     </div>
 
@@ -62,7 +63,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-car"></span>
                         </div>
-                        <h3><a href="services.html">Full Service</a></h3>
+                        <h3><a href="{{asset('/services')}}">Full Service</a></h3>
                         <div class="text">This is Photoshop's version  of Lorem Ipsukroin gravida nibh</div>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-pressure"></span>
                         </div>
-                        <h3><a href="services.html">Tire Balance</a></h3>
+                        <h3><a href="{{asset('/services')}}">Tire Balance</a></h3>
                         <div class="text">This is Photoshop's version  of Lorem Ipsukroin gravida nibh</div>
                     </div>
                 </div>
@@ -84,7 +85,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-plumber"></span>
                         </div>
-                        <h3><a href="services.html">Oil Change</a></h3>
+                        <h3><a href="{{asset('/services')}}">Oil Change</a></h3>
                         <div class="text">This is Photoshop's version  of Lorem Ipsukroin gravida nibh</div>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-tools-2"></span>
                         </div>
-                        <h3><a href="services.html">AC Repair</a></h3>
+                        <h3><a href="{{asset('/services')}}">AC Repair</a></h3>
                         <div class="text">This is Photoshop's version  of Lorem Ipsukroin gravida nibh</div>
                     </div>
                 </div>
@@ -106,7 +107,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-car-repair"></span>
                         </div>
-                        <h3><a href="services.html">Full Service</a></h3>
+                        <h3><a href="{{asset('/services')}}">Full Service</a></h3>
                         <div class="text">This is Photoshop's version  of Lorem Ipsukroin gravida nibh</div>
                     </div>
                 </div>
@@ -117,7 +118,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-tyre"></span>
                         </div>
-                        <h3><a href="services.html">Tire Balance</a></h3>
+                        <h3><a href="{{asset('/services')}}">Tire Balance</a></h3>
                         <div class="text">This is Photoshop's version  of Lorem Ipsukroin gravida nibh</div>
                     </div>
                 </div>
@@ -128,7 +129,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-diesel"></span>
                         </div>
-                        <h3><a href="services.html">Oil Change</a></h3>
+                        <h3><a href="{{asset('/services')}}">Oil Change</a></h3>
                         <div class="text">This is Photoshop's version  of Lorem Ipsukroin gravida nibh</div>
                     </div>
                 </div>
@@ -139,7 +140,7 @@
                         <div class="icon-box">
                             <span class="icon flaticon-battery"></span>
                         </div>
-                        <h3><a href="services.html">AC Repair</a></h3>
+                        <h3><a href="{{asset('/services')}}">AC Repair</a></h3>
                         <div class="text">This is Photoshop's version  of Lorem Ipsukroin gravida nibh</div>
                     </div>
                 </div>
@@ -166,7 +167,9 @@
                                 <div class="acc-content">
                                     <div class="content">
                                         <div class="text">
-                                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+                                            <p>This is Photoshop's version  of Lorem Ipsum.
+                                                Proin gravida nibh vel velit auctor aliquet.
+                                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +181,9 @@
                                 <div class="acc-content current">
                                     <div class="content">
                                         <div class="text">
-                                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+                                            <p>This is Photoshop's version  of Lorem Ipsum.
+                                                Proin gravida nibh vel velit auctor aliquet.
+                                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
                                         </div>
                                     </div>
                                 </div>
@@ -190,7 +195,9 @@
                                 <div class="acc-content">
                                     <div class="content">
                                         <div class="text">
-                                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+                                            <p>This is Photoshop's version  of Lorem Ipsum.
+                                                Proin gravida nibh vel velit auctor aliquet.
+                                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
                                         </div>
                                     </div>
                                 </div>
@@ -206,8 +213,9 @@
                     <div class="inner-column">
                         <h2>Don’t Let Your Truck Leak Oil, Make It Sweat Horse Power!</h2>
                         <h3>If It Runs On Diesel…We’ll Fix It!</h3>
-                        <div class="text">This is Photoshop's version velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </div>
-                        <a href="about.html" class="theme-btn btn-style-three">read more</a>
+                        <div class="text">This is Photoshop's version velit auctor aliquet.
+                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </div>
                     </div>
                 </div>
 
@@ -225,13 +233,14 @@
                 <!--Map Canvas-->
                 <div class="map-canvas"
                      data-zoom="12"
-                     data-lat="-37.817085"
-                     data-lng="144.955631"
+                     data-lat="59.361000537559825"
+                     data-lng="27.44686499845196"
                      data-type="roadmap"
                      data-hue="#ffc400"
-                     data-title="Envato"
+                     data-title="Punapaju ÖÜ"
                      data-icon-path="images/icons/map-marker.png"
-                     data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+                     data-content="Narva maantee 122, Jõhvi, 41536 Ida-Viru maakond, Estonia
+                     <br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
                 </div>
             </div>
         </div>

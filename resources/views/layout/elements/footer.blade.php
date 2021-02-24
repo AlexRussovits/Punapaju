@@ -60,7 +60,7 @@
                             <li><a href="{{asset('/')}}">Home</a></li>
                             <li><a href="{{asset('/services')}}">services</a></li>
                             <li><a href={{asset('/gallery')}}>gallery</a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="{{asset('/contacts')}}">contact</a></li>
                         </ul>
                     </div>
 

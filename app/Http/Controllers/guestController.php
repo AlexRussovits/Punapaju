@@ -6,6 +6,7 @@ use App\Appointment;
 use App\Contact;
 use App\Gallery;
 use App\Service;
+use App\Sponsor;
 use Illuminate\Http\Request;
 
 class guestController extends Controller
@@ -20,8 +21,9 @@ class guestController extends Controller
         $title = 'Our Services';
         $description = 'The Best Services Forever';
         $services = Service::orderBy('id', 'desc')->get();
+        $sponsors = Sponsor::orderBy('id','desc')->get();
 
-        return view('services', compact('title', 'description', 'services'));
+        return view('services', compact('title', 'description', 'services','sponsors'));
     }
 
     public function serviceOne($id)

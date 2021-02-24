@@ -16,7 +16,8 @@
                             <div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <a href="{{asset($gallery->img)}}" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
+                                        <a href="{{asset($gallery->img)}}" data-fancybox="gallery" data-caption=""
+                                           class="link"><span class="icon flaticon-plus-symbol"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -25,11 +26,6 @@
                 </div>
                     @endforeach
             </div>
-
-            <div class="btn-box text-center">
-                <a href="#" class="theme-btn btn-style-four">load more</a>
-            </div>
-
         </div>
     </section>
     <!--End Gallery Page Section-->
