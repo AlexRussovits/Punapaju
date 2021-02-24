@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 21 2021 г., 23:24
+-- Время создания: Фев 24 2021 г., 21:30
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -145,6 +145,32 @@ INSERT INTO `services` (`id`, `title`, `description`, `image`, `descr_long`, `cr
 (5, 'Замена ГРМ ремня и цепи', 'Замена газораспределительного ремня и комплектующих.', 'storage/6.jpg', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', NULL, NULL, NULL),
 (6, 'Антикор', 'Покрытие днища машины антикоррозийной мастикой.', 'storage/4.jpg', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', NULL, NULL, NULL);
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `sponsor`
+--
+
+CREATE TABLE `sponsor` (
+  `id` int(11) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `sponsor`
+--
+
+INSERT INTO `sponsor` (`id`, `img`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'storage/continental.png', NULL, NULL, NULL),
+(2, 'storage/bosch.png', NULL, NULL, NULL),
+(3, 'storage/gates.png', NULL, NULL, NULL),
+(4, 'storage/skf.png', NULL, NULL, NULL),
+(5, 'storage/trw.png', NULL, NULL, NULL),
+(6, 'storage/bilstein.png', NULL, NULL, NULL);
+
 --
 -- Индексы сохранённых таблиц
 --
@@ -180,6 +206,12 @@ ALTER TABLE `services`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `sponsor`
+--
+ALTER TABLE `sponsor`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -211,6 +243,12 @@ ALTER TABLE `gallery`
 -- AUTO_INCREMENT для таблицы `services`
 --
 ALTER TABLE `services`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT для таблицы `sponsor`
+--
+ALTER TABLE `sponsor`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
