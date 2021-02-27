@@ -23,6 +23,9 @@ Route::post('/send-contact', 'guestController@sendContact');
 Route::post('/send-appointment', 'guestController@sendAppointment');
 
 
+Route::get('/login', 'Auth\LoginController@showLoginForm');
+Route::post('/loginToSystem', 'Auth\LoginController@login');
 
-
-
+Route::group(['middleware'=>'auth', 'prefix'=>'dashboard'], function() {
+    Route::get('/','AdminController@index');
+});
