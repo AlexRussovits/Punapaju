@@ -18,7 +18,7 @@
     <!--End Main Slider-->
 
     <!--Services Section-->
-    <section class="services-section pt-5" style="background-image:url(images/resource/image-1.png)">
+    <section class="services-section pt-5" style="background-image:url(images/img/main.jpg)">
         <div class="auto-container">
             <!--Lower Section-->
             <div class="lower-section">
@@ -28,7 +28,7 @@
                     <div class="image-column col-lg-6 col-md-12 col-sm-12">
                         <div class="inner-column">
                             <div class="image">
-                                <img src="images/resource/car.jpg" alt="" />
+                                <img src="{{asset('storage/app/public/1.jpg')}}" alt="" />
                             </div>
                         </div>
                     </div>

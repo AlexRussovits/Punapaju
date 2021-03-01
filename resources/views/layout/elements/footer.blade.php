@@ -13,7 +13,7 @@
                         <div class="footer-column col-md-6 col-sm-6 col-xs-12">
                             <div class="footer-widget logo-widget">
                                 <div class="logo">
-                                    <a href="index.html"><img src="{{asset('images/footer-logo.png')}}" alt="" /></a>
+                                    <a href="{{asset('/')}}"><img src="{{asset('images/footer-logo.png')}}" alt="" /></a>
                                 </div>
                                 <div class="text">This is Photoshop's version  of Lorem]psukroin gravida nibh vel velit auctor aliquet.Aenean sollicitudin, lorem quis bibendum auctor</div>
                             </div>

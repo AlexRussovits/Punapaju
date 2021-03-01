@@ -25,7 +25,7 @@
             <div class="header-upper-inner clearfix">
 
                 <div class="pull-left logo-box">
-                    <div class="logo"><a href="index.html"><img src="{{asset('images/logo.png')}}" alt="" title=""></a></div>
+                    <div class="logo"><a href="{{asset('/')}}"><img src="{{asset('images/logo.png')}}" alt="" title=""></a></div>
                 </div>
 
                 <div class="nav-outer clearfix">
