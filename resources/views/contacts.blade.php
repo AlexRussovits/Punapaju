@@ -4,7 +4,7 @@
     <section class="contact-form-section">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2>Get in touch!</h2>
+                <h2>Связаться c нами!</h2>
             </div>
 
             @if(session('success_delivery'))
@@ -31,19 +31,19 @@
                     @csrf
                     <div class="row clearfix">
                         <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                            <input type="text" name="name" value="" placeholder="Name" required>
+                            <input type="text" name="name" value="" placeholder="Имя и Фамилия" required>
                         </div>
 
                         <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                            <input type="text" name="email" value="" placeholder="Email" required>
+                            <input type="text" name="email" value="" placeholder="Почта" required>
                         </div>
 
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                            <textarea name="text" placeholder="Write Your Comment..."></textarea>
+                            <textarea name="text" placeholder="Комментарий..."></textarea>
                         </div>
 
                         <div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
-                            <button type="submit" class="theme-btn btn-style-two">Submit</button>
+                            <button type="submit" class="theme-btn btn-style-two">Отправить</button>
                         </div>
                     </div>
                 </form>
@@ -57,7 +57,7 @@
     <section class="map-section">
         <div class="image-layer" style="background-image:url(images/background/1.jpg)"></div>
         <div class="auto-container">
-            <h2>Your Automotive Repair Experts.<span> Where to find us?</span></h2>
+            <h2><span>Как нас найти?</span></h2>
             <div class="map-box">
                 <!--Map Canvas-->
                 <div class="map-canvas"

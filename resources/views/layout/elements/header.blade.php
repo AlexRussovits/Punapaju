@@ -9,8 +9,8 @@
                 <!--Top Right-->
                 <div class="top-right">
                     <ul class="links clearfix">
-                        <li><a href="#"><span class="icon fa fa-phone"></span>  Call us 1-555-133-447</a></li>
-                        <li><a href="#"><span class="icon fa fa-envelope-o"></span>contact@mechanic.com</a></li>
+                        <li><p><span class="icon fa fa-phone"></span>  Звоните нам +372 5293923</p></li>
+                        <li><p><span class="icon fa fa-envelope-o"></span>punapaju@gmail.com<p></li>
                     </ul>
                 </div>
             </div>
@@ -42,10 +42,10 @@
 
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li><a href="{{asset('/')}}">Home</a></li>
-                                <li><a href="{{asset('/services')}}">Services</a></li>
-                                <li><a href={{asset('/gallery')}}>Gallery</a></li>
-                                <li><a href="{{asset('/contacts')}}">Contact us</a></li>
+                                <li><a href="{{asset('/')}}">Главная</a></li>
+                                <li><a href="{{asset('/services')}}">Услуги</a></li>
+                                <li><a href={{asset('/gallery')}}>Галерея</a></li>
+                                <li><a href="{{asset('/contacts')}}">Контакты</a></li>
                             </ul>
                         </div>
 
@@ -54,7 +54,7 @@
                 </div>
                 <!--Option Box-->
                 <div class="btn-box">
-                    <a href="{{asset('/appointment')}}" class="theme-btn btn-style-one">Make a Appointment</a>
+                    <a href="{{asset('/appointment')}}" class="theme-btn btn-style-one">Сделать запись</a>
                 </div>
             </div>
         </div>
@@ -81,10 +81,10 @@
 
                     <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                         <ul class="navigation clearfix">
-                            <li><a href="{{asset('/')}}">Home</a></li>
-                            <li><a href="{{asset('/services')}}">Services</a></li>
-                            <li><a href="{{asset('/gallery')}}">Gallery</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="{{asset('/')}}">Главная</a></li>
+                            <li><a href="{{asset('/services')}}">Услуги</a></li>
+                            <li><a href="{{asset('/gallery')}}">Галерея</a></li>
+                            <li><a href="{{asset('contacts')}}">Контакты</a></li>
                         </ul>
                     </div>
                 </nav><!-- Main Menu End-->

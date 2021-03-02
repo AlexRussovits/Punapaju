@@ -469,11 +469,12 @@ img{
 }
 
 .main-header .header-top .top-right .links li span{
+    color:white;
 	position:relative;
 	margin:0px 5px;
 }
 
-.main-header .header-top .top-right .links > li > a{
+.main-header .header-top .top-right .links > li > p{
 	position:relative;
 	color:#ffffff;
 	font-size:15px;

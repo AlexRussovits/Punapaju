@@ -13,9 +13,9 @@
                         <div class="footer-column col-md-6 col-sm-6 col-xs-12">
                             <div class="footer-widget logo-widget">
                                 <div class="logo">
-                                    <a href="{{asset('/')}}"><img src="{{asset('images/footer-logo.png')}}" alt="" /></a>
+                                    <a href="index.html"><img src="{{asset('images/img/logo.png')}}" alt="" /></a>
                                 </div>
-                                <div class="text">This is Photoshop's version  of Lorem]psukroin gravida nibh vel velit auctor aliquet.Aenean sollicitudin, lorem quis bibendum auctor</div>
+                                <div class="text">Автомастерская Punapaju - современный многопрофильный автосервис в городе Йыхви.</div>
                             </div>
                         </div>
                     </div>
@@ -28,15 +28,10 @@
                         <!--Footer Column-->
                         <div class="footer-column col-md-6 col-sm-6 col-xs-12">
                             <div class="footer-widget contact-widget">
-                                <h2>Get In Contact</h2>
+                                <h2>Часы работы</h2>
                                 <ul class="opening-time">
-                                    <li><span>Monday:</span> 9:30 am - 6.00 pm</li>
-                                    <li><span>Tuesday:</span> 9:30 am - 6.00 pm</li>
-                                    <li><span>Wednesday:</span> 9:30 am - 6.00 pm</li>
-                                    <li><span>Thursday:</span> 9:30 am - 6.00 pm</li>
-                                    <li><span>Friday:</span> 9:30 am - 6.00 pm</li>
-                                    <li><span>Saturday:</span> 9:30 am - 6.00 pm</li>
-                                    <li><span>Sunday:</span>Closed</li>
+                                    <li><span>Пн-Пт:</span> 09:00 — 17:00</li>
+                                    <li><span>Сб-Вс:</span>Закрыто</li>
                                 </ul>
                             </div>
                         </div>
@@ -57,16 +52,16 @@
                     <!--Nav Column-->
                     <div class="nav-column col-lg-6 col-md-12 col-sm-12">
                         <ul class="footer-nav">
-                            <li><a href="{{asset('/')}}">Home</a></li>
-                            <li><a href="{{asset('/services')}}">services</a></li>
-                            <li><a href={{asset('/gallery')}}>gallery</a></li>
-                            <li><a href="{{asset('/contacts')}}">contact</a></li>
+                            <li><a href="{{asset('/')}}">Главная</a></li>
+                            <li><a href="{{asset('/services')}}">Услуги</a></li>
+                            <li><a href={{asset('/gallery')}}>Галерея</a></li>
+                            <li><a href="{{asset('/contacts')}}">Контакты</a></li>
                         </ul>
                     </div>
 
                     <!--Copyright Column-->
                     <div class="copyright-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="copyright">&copy; 2018 Vetura, All Rights Reserved</div>
+                        <div class="copyright">&copy; 2021 Punapaju OÜ, Все права защищены</div>
                     </div>
 
                 </div>

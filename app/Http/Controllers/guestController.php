@@ -18,8 +18,8 @@ class guestController extends Controller
 
     public function services()
     {
-        $title = 'Our Services';
-        $description = 'The Best Services Forever';
+        $title = 'Услуги';
+        $description = 'У нас самые лучшие услуги';
         $services = Service::orderBy('id', 'desc')->get();
         $sponsors = Sponsor::orderBy('id','desc')->get();
 
@@ -40,15 +40,15 @@ class guestController extends Controller
 
     public function gallery()
     {
-        $title = 'Our Gallery';
-        $description = 'The Best Services Forever';
+        $title = 'Галерея';
+        $description = 'У нас самые лучшие услуги';
         $galleries= Gallery::orderBy('id', 'desc')->get();
         return view('gallery', compact('galleries', 'title', 'description'));
     }
 
     public function appointment() {
-        $title = 'Appointment';
-        $description = 'The Best Services Forever';
+        $title = 'Запись';
+        $description = 'У нас самые лучшие услуги';
         return view('appointment', compact('title', 'description'));
     }
 
@@ -76,8 +76,8 @@ class guestController extends Controller
 
     //Данный метод служит для отображения страницы
     public function contacts(){
-        $title = 'Contact';
-        $description = 'The Best Services Forever';
+        $title = 'Контакты';
+        $description = 'У нас самые лучшие услуги';
         return view('contacts', compact('title', 'description'));
     }
 
