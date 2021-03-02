@@ -25,7 +25,7 @@
             <div class="header-upper-inner clearfix">
 
                 <div class="pull-left logo-box">
-                    <div class="logo"><a href="{{asset('/')}}"><img src="{{asset('images/logo.png')}}" alt="" title=""></a></div>
+                    <div class="logo"><a href="{{asset('/')}}"><img src="{{asset('images/img/logo.png')}}" alt="" title=""></a></div>
                 </div>
 
                 <div class="nav-outer clearfix">
@@ -66,7 +66,7 @@
         <div class="auto-container clearfix">
             <!--Logo-->
             <div class="logo pull-left">
-                <a href="index.html" class="img-responsive"><img src="{{asset('images/logo-small.png')}}" alt="" title=""></a>
+                <a href="{{asset('/')}}" class="img-responsive"><img src="{{asset('images/img/logo.png')}}" alt="" title=""></a>
             </div>
 
             <!--Right Col-->

@@ -6,19 +6,20 @@
 
         <div class="main-slider-carousel owl-carousel owl-theme">
 
-            <div class="slide" style="background-image:url(images/main-slider/image-1.jpg)">
+            <div class="slide" style="background-image:url(images/img/bg.jpg)">
                 <div class="auto-container">
                     <div class="content">
-                        <h2>Building Your Trust <span>Since 1968.</span></h2>
+                        <h2>PUNAPAJU OÜ <span>Качественный авторемонт
+                        по доступным ценам.</span></h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--End Main Slider-->
-
+<!--style="background-image:url(images/img/bg.jpg) -->
     <!--Services Section-->
-    <section class="services-section pt-5" style="background-image:url(images/img/main.jpg)">
+    <section class="services-section pt-5">
         <div class="auto-container">
             <!--Lower Section-->
             <div class="lower-section">
@@ -28,7 +29,7 @@
                     <div class="image-column col-lg-6 col-md-12 col-sm-12">
                         <div class="inner-column">
                             <div class="image">
-                                <img src="{{asset('storage/app/public/1.jpg')}}" alt="" />
+                                <img src="{{asset('images/img/main.jpg')}}" alt="" />
                             </div>
                         </div>
                     </div>
@@ -36,12 +37,12 @@
                     <!--Content Column-->
                     <div class="content-column col-lg-6 col-md-12 col-sm-12">
                         <div class="inner-column">
-                            <h2>Don’t Let Your Truck Leak Oil, Make It Sweat Horse Power!</h2>
-                            <h3>If It Runs On Diesel…We’ll Fix It!</h3>
-                            <div class="text">This is Photoshop's version  of Lorem Ipsum.
-                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </div>
+                            <h2>Автомастерская Punapaju</h2>
+                            <div class="text">Это современный многопрофильный автосервис в городе Йыхви.
+                                Мы осуществляем многие виды ремонта и обслуживание автомобилей.
+                                Мы следуем принципам, которые соответствуют ожиданиям клиентов: мы соблюдаем сроки ремонта автомобиля,
+                                быстро выявляем неисправности, используем качественное оборудование и расходные материалы.
+                                Гарантия качества на все работы. </div>
                         </div>
                     </div>
 
