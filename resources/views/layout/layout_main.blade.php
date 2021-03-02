@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Mechanics HTML Template | Homepage</title>
+    <title>Punapaju ÖÜ</title>
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
