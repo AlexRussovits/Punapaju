@@ -28,4 +28,10 @@ Route::post('/loginToSystem', 'Auth\LoginController@login');
 
 Route::group(['middleware'=>'auth', 'prefix'=>'dashboard'], function() {
     Route::get('/','AdminController@index');
+    Route::get('/appointment_dashboard', 'Crud\AppointmentController@read');
 });
+
+
+
+
+
