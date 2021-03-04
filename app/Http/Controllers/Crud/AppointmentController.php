@@ -22,7 +22,7 @@ class AppointmentController extends Controller
 
 
     public function read() {
-        $appointments = Appointment::orderBy('id','desc')->get();
+        $appointments = Appointment::orderBy('id','asc')->get();
         return view('dashboard.appointment_dashboard', compact('appointments'));
     }
 

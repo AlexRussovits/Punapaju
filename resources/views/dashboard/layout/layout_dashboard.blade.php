@@ -48,20 +48,26 @@
                     Cписок
                 </li>
                 <li class="active-page">
-                    <a href="index.html" class="active"><i class="material-icons-outlined">dashboard</i>Главная</a>
+                    <a href="{{'/dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Главная</a>
                 </li>
-                <li>
-                    <a href="index.html" class="active"><i class="material-icons-outlined">dashboard</i>Записи</a>
+                <li class="active-page">
+                    <a href="{{'/dashboard/appointment_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Записи</a>
                 </li>
-                <li>
-                    <a href="index.html" class="active"><i class="material-icons-outlined">dashboard</i>Пользователи</a>
+                <li class="active-page">
+                    <a href="{{'/dashboard/user_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Пользователи</a>
                 </li>
-                <li>
-                    <a href="index.html" class="active"><i class="material-icons-outlined">dashboard</i>Контакты</a>
+                <li class="active-page">
+                    <a href="{{'/dashboard/contacts_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Контакты</a>
                 </li>
-                <li><a href="index.html" class="active"><i class="material-icons-outlined">dashboard</i>Услуги</a></li>
-                <li><a href="index.html" class="active"><i class="material-icons-outlined">dashboard</i>Спонсоры</a></li>
-                <li><a href="index.html" class="active"><i class="material-icons-outlined">dashboard</i>Галерея</a></li>
+                <li class="active-page">
+                    <a href="{{'/dashboard/services_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Услуги</a>
+                </li>
+                <li class="active-page">
+                    <a href="{{'/dashboard/sponsor_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Спонсоры</a>
+                </li>
+                <li class="active-page">
+                    <a href="{{'/dashboard/gallery_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Галерея</a>
+                </li>
             </ul>
         </div>
     </div>

@@ -29,6 +29,11 @@ Route::post('/loginToSystem', 'Auth\LoginController@login');
 Route::group(['middleware'=>'auth', 'prefix'=>'dashboard'], function() {
     Route::get('/','AdminController@index');
     Route::get('/appointment_dashboard', 'Crud\AppointmentController@read');
+    Route::get('/services_dashboard', 'Crud\ServiceController@read');
+    Route::get('/gallery_dashboard', 'Crud\GalleryController@read');
+    Route::get('/sponsor_dashboard', 'Crud\SponsorController@read');
+    Route::get('/contacts_dashboard', 'Crud\ContactController@read');
+    Route::get('/user_dashboard', 'Crud\UserController@read');
 });
 
 

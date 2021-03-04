@@ -15,7 +15,7 @@
     <tbody>
     @foreach($appointments as $appointment)
         <tr>
-            <th scope="row">1</th>
+            <th scope="row">{{$appointment->id}}</th>
             <td>{{$appointment->name}}</td>
             <td>{{$appointment->email}}</td>
             <td>{{$appointment->phone_number}}</td>

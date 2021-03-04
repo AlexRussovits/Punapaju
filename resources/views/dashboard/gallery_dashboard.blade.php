@@ -4,23 +4,16 @@
         <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Index Number Auto</th>
-            <th scope="col">Problem</th>
+            <th scope="col">Image</th>
             <th scope="col">Handle</th>
+
         </tr>
         </thead>
         <tbody>
-        @foreach($appointments as $appointment)
+        @foreach($galleries as $gallery)
             <tr>
-                <th scope="row">1</th>
-                <td>{{$appointment->name}}</td>
-                <td>{{$appointment->email}}</td>
-                <td>{{$appointment->phone_number}}</td>
-                <td>{{$appointment->index_number_auto}}</td>
-                <td>{{$appointment->text}}</td>
+                <th scope="row">{{$gallery->id}}</th>
+                <td>{{$gallery->img}}</td>
                 <td>@mdo</td>
             </tr>
         @endforeach
