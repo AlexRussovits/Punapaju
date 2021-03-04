@@ -46,7 +46,6 @@
                             <input type="text" name="index_number_auto" value="" placeholder="Номер машины" required>
                         </div>
 
-
                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                             <textarea name="text" placeholder="Напишите о своей проблеме..." required></textarea>
                         </div>

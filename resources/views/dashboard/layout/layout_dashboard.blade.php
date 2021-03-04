@@ -50,22 +50,22 @@
                 <li class="active-page">
                     <a href="{{'/dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Главная</a>
                 </li>
-                <li class="active-page">
+                <li class="">
                     <a href="{{'/dashboard/appointment_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Записи</a>
                 </li>
-                <li class="active-page">
+                <li class="">
                     <a href="{{'/dashboard/user_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Пользователи</a>
                 </li>
-                <li class="active-page">
+                <li class="">
                     <a href="{{'/dashboard/contacts_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Контакты</a>
                 </li>
-                <li class="active-page">
+                <li class="">
                     <a href="{{'/dashboard/services_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Услуги</a>
                 </li>
-                <li class="active-page">
+                <li class="">
                     <a href="{{'/dashboard/sponsor_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Спонсоры</a>
                 </li>
-                <li class="active-page">
+                <li class="">
                     <a href="{{'/dashboard/gallery_dashboard'}}" class="active"><i class="material-icons-outlined">dashboard</i>Галерея</a>
                 </li>
             </ul>

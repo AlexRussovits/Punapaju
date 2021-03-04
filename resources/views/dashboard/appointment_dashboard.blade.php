@@ -21,7 +21,12 @@
             <td>{{$appointment->phone_number}}</td>
             <td>{{$appointment->index_number_auto}}</td>
             <td>{{$appointment->text}}</td>
-            <td>@mdo</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary"><a href="{{'/dashboard/edit/appointment_edit/'.$appointment->id}}">Edit</a></button>
+                    <button type="button" class="btn btn-secondary"><a>Delete</a></button>
+                </div>
+            </td>
         </tr>
     @endforeach
     </tbody>
