@@ -20,8 +20,7 @@ Route::get('/contacts', 'guestController@contacts');
 
 //Make post route
 Route::post('/send-contact', 'guestController@sendContact');
-Route::post('/send-appointment', 'guestController@sendAppointment');
-Route::post('/edit-appointment', 'Crud\AppointmentController@editAppointment');
+
 
 
 Route::get('/login', 'Auth\LoginController@showLoginForm');
@@ -36,6 +35,9 @@ Route::group(['middleware'=>'auth', 'prefix'=>'dashboard'], function() {
     Route::get('/sponsor_dashboard', 'Crud\SponsorController@read');
     Route::get('/contacts_dashboard', 'Crud\ContactController@read');
     Route::get('/user_dashboard', 'Crud\UserController@read');
+    Route::post('/send-appointment', 'guestController@sendAppointment');
+    Route::post('/edit/appointment_edit/action/{id}', 'Crud\AppointmentController@editAppointment');
+    Route::get('/logout', 'Auth\LoginController@logout');
 
 });
 

@@ -1,5 +1,22 @@
 @extends('dashboard.layout.layout_dashboard')
 @section('content')
+    @if(session('success_delivery'))
+        <div class="alert alert-success">
+            <p class="mb-0">
+                Your appointment was edited
+            </p>
+        </div>
+    @endif
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 <table class="table">
     <thead>
     <tr>

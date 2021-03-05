@@ -22,6 +22,26 @@ class AppointmentController extends Controller
         }
     }
 
+    public function editAppointment($id,Request $request) {
+        $appointment = Appointment::find($id);
+        if(!empty($appointment)) {
+            $request->validate([
+                'email'=> 'email|max:120|required',
+                'name'=> 'max:120|required',
+                'text'=> 'required',
+                'index_number_auto' => 'max:10|required',
+                'phone_number' => 'max:12|required'
+            ]);
+        }else{
+            return abort('404');
+        }
+        if(($appointment->fill($request->except(['_token'])))->save()) {
+            return redirect('/dashboard/appointment_dashboard')->with(['success_delivery'=>true]);
+        }else{
+            return abort('404');
+        }
+    }
+
     /*
     public function delete() {
 
