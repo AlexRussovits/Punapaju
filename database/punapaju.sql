@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 02 2021 г., 16:34
--- Версия сервера: 10.3.13-MariaDB
--- Версия PHP: 7.1.22
+-- Время создания: Мар 08 2021 г., 12:46
+-- Версия сервера: 10.3.22-MariaDB
+-- Версия PHP: 7.1.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -37,15 +36,16 @@ CREATE TABLE `appointment` (
   `text` text NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `deteletd_at` timestamp NULL DEFAULT NULL
+  `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `appointment`
 --
 
-INSERT INTO `appointment` (`id`, `name`, `email`, `phone_number`, `index_number_auto`, `text`, `created_at`, `updated_at`, `deteletd_at`) VALUES
-(2, 'Andrey Ryzhikov', 'andrey.ryzhikov@email.com', '+37256344868', '099 BTT', 'Проблема с мотором', '2021-02-21 18:18:12', '2021-02-21 18:18:12', NULL);
+INSERT INTO `appointment` (`id`, `name`, `email`, `phone_number`, `index_number_auto`, `text`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(2, 'Andrey Ryzhikov', 'andrey.ryzhikov@email.com', '+37256344868', '099 BTT', 'Проблема с мотором 2', '2021-02-21 18:18:12', '2021-03-05 08:30:24', NULL),
+(3, 'Andrey Legkov', 'andrey.ryzhikov@email.com', '+37256344868', '099 BTT', 'Проблема с мотором', '2021-03-04 14:53:19', '2021-03-04 14:53:19', NULL);
 
 -- --------------------------------------------------------
 
@@ -89,7 +89,7 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `name`, `email`, `text`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(2, 'Aleksei', 'test@mail.ru', 'Саня, включай мозги', '2021-02-21 15:48:54', '2021-02-21 15:48:54', NULL);
+(2, 'Aleksei', 'test@mail.ru', 'Крутой автосервис', '2021-02-21 15:48:54', '2021-03-05 09:22:12', NULL);
 
 -- --------------------------------------------------------
 
@@ -115,7 +115,8 @@ INSERT INTO `gallery` (`id`, `img`, `created_at`, `updated_at`, `deleted_at`) VA
 (3, 'storage/2.jpg', NULL, NULL, NULL),
 (4, 'storage/3.jpg', NULL, NULL, NULL),
 (5, 'storage/5.jpg', NULL, NULL, NULL),
-(6, 'storage/4.jpg', NULL, NULL, NULL);
+(6, 'storage/4.jpg', NULL, NULL, NULL),
+(7, 'storage/7.jpg', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -217,15 +218,16 @@ CREATE TABLE `users` (
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `username`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Alesha Popovich', 'admin', '$2y$10$PPQ0zPlaKaQ.R7FAmx9sX.qmEi7gse4HZdKZgRiW5z91iGV8fbThu', NULL, NULL, NULL);
+INSERT INTO `users` (`id`, `name`, `username`, `password`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'Vera Lepesheva', 'admin', '$2y$10$PPQ0zPlaKaQ.R7FAmx9sX.qmEi7gse4HZdKZgRiW5z91iGV8fbThu', 'env1k1uvQERvWow4ZwWMFyWpdWiawlQV0qjCD7TwzPpeZYahJQTUYwk3y4Nj', NULL, '2021-03-08 06:46:17', NULL);
 
 --
 -- Индексы сохранённых таблиц
@@ -294,7 +296,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `category`
@@ -312,7 +314,7 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT для таблицы `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `migrations`

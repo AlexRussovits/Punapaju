@@ -13,7 +13,7 @@ class AppointmentController extends Controller
         return view('dashboard.appointment_dashboard', compact('appointments'));
     }
 
-    public function showEdit($id) {
+    public function showAppointment($id) {
         $appointment = Appointment::find($id);
         if(!empty($appointment)) {
             return view('dashboard.edit.appointment_edit', compact('appointment'));
@@ -42,9 +42,14 @@ class AppointmentController extends Controller
         }
     }
 
-    /*
-    public function delete() {
+    public function destroyAppointment(Appointment $appointment) {
 
+        if(!empty($appointment)) {
+            $appointment->delete();
+            return redirect('/dashboard/appointment_dashboard')->with(['success_delivery'=>true]);
+        } else{
+            return abort('404');
+        }
+        dd('ok');
     }
-    */
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Mechanics HTML Template | Team</title>
+<title>Punapaju ÖÜ</title>
 <!-- Stylesheets -->
 <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
 <link href="{{asset('css/style.css')}}" rel="stylesheet">

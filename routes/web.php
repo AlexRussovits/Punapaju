@@ -28,15 +28,33 @@ Route::post('/loginToSystem', 'Auth\LoginController@login');
 
 Route::group(['middleware'=>'auth', 'prefix'=>'dashboard'], function() {
     Route::get('/','AdminController@index');
+
     Route::get('/appointment_dashboard', 'Crud\AppointmentController@read');
-    Route::get('/edit/appointment_edit/{id}', 'Crud\AppointmentController@showEdit');
-    Route::get('/services_dashboard', 'Crud\ServiceController@read');
-    Route::get('/gallery_dashboard', 'Crud\GalleryController@read');
-    Route::get('/sponsor_dashboard', 'Crud\SponsorController@read');
-    Route::get('/contacts_dashboard', 'Crud\ContactController@read');
-    Route::get('/user_dashboard', 'Crud\UserController@read');
-    Route::post('/send-appointment', 'guestController@sendAppointment');
+    Route::get('/edit/appointment_edit/{id}', 'Crud\AppointmentController@showAppointment');
     Route::post('/edit/appointment_edit/action/{id}', 'Crud\AppointmentController@editAppointment');
+    Route::post('/delete/appointment_delete/action/{id}', 'Crud\AppointmentController@destroyAppointment');
+
+    Route::get('/services_dashboard', 'Crud\ServiceController@read');
+    Route::get('/edit/services_edit/{id}', 'Crud\ServiceController@showService');
+    Route::post('/edit/services_edit/action/{id}', 'Crud\ServiceController@editService');
+
+
+    Route::get('/gallery_dashboard', 'Crud\GalleryController@read');
+    Route::get('/edit/gallery_edit/{id}', 'Crud\GalleryController@showGallery');
+    Route::post('/edit/gallery_edit/action/{id}', 'Crud\GalleryController@editGallery');
+
+    Route::get('/sponsor_dashboard', 'Crud\SponsorController@read');
+    Route::get('/edit/sponsor_edit/{id}', 'Crud\SponsorController@showSponsor');
+    Route::post('/edit/sponsor_edit/action/{id}', 'Crud\SponsorController@editSponsor');
+
+    Route::get('/contacts_dashboard', 'Crud\ContactController@read');
+    Route::get('/edit/contacts_edit/{id}', 'Crud\ContactController@showContact');
+    Route::post('/edit/contacts_edit/action/{id}', 'Crud\ContactController@editContact');
+
+    Route::get('/user_dashboard', 'Crud\UserController@read');
+    Route::get('/edit/user_edit/{id}', 'Crud\UserController@showUser');
+    Route::post('/edit/user_edit/action/{id}', 'Crud\UserController@editUser');
+
     Route::get('/logout', 'Auth\LoginController@logout');
 
 });

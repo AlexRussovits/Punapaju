@@ -91,7 +91,9 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="dark-theme-toggle"><i class="material-icons-outlined">brightness_2</i><i class="material-icons">brightness_2</i></a>
+                        <a href="#" class="nav-link" id="dark-theme-toggle">
+                            <i class="material-icons-outlined">brightness_2</i><i class="material-icons">brightness_2
+                            </i></a>
                     </li>
                 </ul>
             </nav>
