@@ -3,7 +3,7 @@
     @if(session('success_delivery'))
         <div class="alert alert-success">
             <p class="mb-0">
-                Your user was edited
+                Your users was updated
             </p>
         </div>
     @endif
@@ -17,7 +17,7 @@
             </ul>
         </div>
     @endif
-    <button type="button" class="btn btn-secondary"><a>Create</a></button>
+    <button type="button" class="btn btn-secondary ml-5"><a href={{'/dashboard/create/user_create/'}}>Create</a></button>
     <table class="table">
         <thead>
         <tr>
@@ -37,8 +37,8 @@
                 <td>{{$user->password}}</td>
                 <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary"><a href="{{'/dashboard/edit/user_edit'.$user->id}}">Edit</a></button>
-                        <button type="button" class="btn btn-secondary"><a>Delete</a></button>
+                        <button type="button" class="btn btn-secondary"><a href="{{'/dashboard/edit/user_edit/'.$user->id}}">Edit</a></button>
+                        <button type="button" class="btn btn-secondary"><a href={{'/dashboard/delete/user_delete/action/'.$user->id}}>Delete</a></button>
                     </div>
                 </td>
             </tr>

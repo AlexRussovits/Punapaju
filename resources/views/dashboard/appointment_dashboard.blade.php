@@ -3,7 +3,7 @@
     @if(session('success_delivery'))
         <div class="alert alert-success">
             <p class="mb-0">
-                Your appointment was edited
+                Your appointment was updated
             </p>
         </div>
     @endif

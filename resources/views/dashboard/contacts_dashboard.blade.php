@@ -3,7 +3,7 @@
     @if(session('success_delivery'))
         <div class="alert alert-success">
             <p class="mb-0">
-                Your contacts was edited
+                Your contacts was updated
             </p>
         </div>
     @endif
@@ -38,7 +38,7 @@
                 <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-secondary"><a href={{'/dashboard/edit/contacts_edit/'.$contact->id}}>Edit</a></button>
-                        <button type="button" class="btn btn-secondary"><a>Delete</a></button>
+                        <button type="button" class="btn btn-secondary"><a href={{'/dashboard/delete/contacts_delete/action/'.$contact->id}}>Delete</a></button>
                     </div>
                 </td>
             </tr>

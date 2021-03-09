@@ -41,7 +41,7 @@
 </div>
 <div class="connect-container align-content-stretch d-flex flex-wrap">
     <div class="page-sidebar">
-        <div class="logo-box"><a href="#" class="logo-text">Punapaju</a></div>
+        <div class="logo-box"><a href="{{'/dashboard'}}" class="logo-text">Punapaju</a></div>
         <div class="page-sidebar-inner slimscroll">
             <ul class="accordion-menu">
                 <li class="sidebar-title">

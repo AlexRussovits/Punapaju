@@ -3,7 +3,7 @@
     @if(session('success_delivery'))
         <div class="alert alert-success">
             <p class="mb-0">
-                Your service was edited
+                Your services was updated
             </p>
         </div>
     @endif
@@ -18,7 +18,7 @@
         </div>
     @endif
 
-    <button type="button" class="btn btn-secondary"><a>Create</a></button>
+    <button type="button" class="btn btn-secondary ml-5"><a href={{'/dashboard/create/services_create/'}}>Create</a></button>
     <table class="table">
         <thead>
         <tr>
@@ -41,7 +41,7 @@
                 <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-secondary"><a href="{{'/dashboard/edit/services_edit/'.$service->id}}">Edit</a></button>
-                        <button type="button" class="btn btn-secondary"><a>Delete</a></button>
+                        <button type="button" class="btn btn-secondary"><a href={{'/dashboard/delete/services_delete/action/'.$service->id}}>Delete</a></button>
                     </div>
                 </td>
             </tr>
