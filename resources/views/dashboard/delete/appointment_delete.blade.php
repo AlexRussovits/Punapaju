@@ -10,9 +10,8 @@
         </div>
     @endif
 
-    <form method="post" action="{{asset('/dashboard/delete/appointment_delete/action/'.$appointment->id)}}">
+    <form method="post" action="{{asset('/dashboard/delete/appointment_delete/'.$appointment->id)}}">
         @csrf
-
         <div class="form-group col-lg-12 col-md-12 col-sm-12">
             <input type="name"  name="name" class="form-control" value="{{$appointment->name}}" id="name">
         </div>
@@ -29,7 +28,7 @@
             <textarea class="form-control" name="text" placeholder="Напишите о своей проблеме..." required>{{$appointment->text}}</textarea>
         </div>
         <div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
-            <button type="submit" class="btn btn-primary">Изменить</button>
+            <button type="submit" class="btn btn-primary">Удалить</button>
         </div>
     </form>
 @endsection
