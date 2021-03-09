@@ -39,4 +39,10 @@ class ContactController extends Controller
             return abort('404');
         }
     }
+
+    public function destroyContact($id) {
+        $contact = Contact::find($id);
+        $contact->delete();
+        return redirect('/dashboard/contacts_dashboard')->with(['success_delivery'=>true]);
+    }
 }

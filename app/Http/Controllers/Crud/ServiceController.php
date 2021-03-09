@@ -14,6 +14,28 @@ class ServiceController extends Controller
         return view ('dashboard.services_dashboard', compact('services'));
     }
 
+    public function showCreateService() {
+        return view ('dashboard.create.services_create');
+    }
+
+    public function createService(Request $request) {
+        $title = $request->title;
+        $description = $request->description;
+        $descr_long = $request->descr_long;
+        $image = $request->file('image')->store('public');
+        $pos = stripos($image , '/');
+        $image = substr($image , $pos, strlen($image));
+        $image  = 'storage' . $image ;
+        Service::create([
+            'title' => $title,
+            'description' => $description,
+            'image' => $image,
+            'descr_long' => $descr_long
+        ]);
+        return redirect('/dashboard/services_dashboard')->with(['success_delivery' => true]);
+    }
+
+
     public function showService($id) {
         $service = Service::find($id);
         if(!empty($service)) {
@@ -56,5 +78,11 @@ class ServiceController extends Controller
                 }
             }
         }
+    }
+
+    public function destroyService($id) {
+        $service = Service::find($id);
+        $service->delete();
+        return redirect('/dashboard/services_dashboard')->with(['success_delivery'=>true]);
     }
 }

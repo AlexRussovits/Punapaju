@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Crud;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -12,6 +13,23 @@ class UserController extends Controller
         $users = User::orderBy('id','asc')->get();
         return view('dashboard.user_dashboard', compact('users'));
     }
+
+    public function showCreateUser() {
+        return view('dashboard.create.user_create');
+    }
+
+    public function createUser(Request $request) {
+        $name = $request->name;
+        $username = $request->username;
+        $password = Hash::make($request->password);
+        User::create([
+            'name' => $name,
+            'username' => $username,
+            'password' => $password
+        ]);
+        return redirect('/dashboard/user_dashboard')->with(['success_delivery'=>true]);
+    }
+
     public function showUser($id)
     {
         $user = User::find($id);
@@ -38,16 +56,10 @@ class UserController extends Controller
             return abort('404');
         }
     }
-    /*
-    public function destroyAppointment(Appointment $appointment) {
 
-        if(!empty($appointment)) {
-            $appointment->delete();
-            return redirect('/dashboard/appointment_dashboard')->with(['success_delivery'=>true]);
-        } else{
-            return abort('404');
-        }
-        dd('ok');
+    public function destroyUser($id) {
+        $user = User::find($id);
+        $user->delete();
+        return redirect('/dashboard/user_dashboard')->with(['success_delivery'=>true]);
     }
-    */
 }

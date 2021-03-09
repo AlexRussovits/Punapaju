@@ -15,6 +15,26 @@ class GalleryController extends Controller
         return view('dashboard.gallery_dashboard', compact('galleries'));
     }
 
+    public function showcreateGallery() {
+
+        return view('dashboard.create.gallery_create');
+    }
+
+    public function createGallery(Request $request) {
+        //dd($request->all());
+        $img = $request->file('img')->store('public');
+        $pos = stripos($img , '/');
+        $img = substr($img , $pos, strlen($img));
+        $img  = 'storage' . $img ;
+
+        Gallery::create([
+            'img' => $img,
+        ]);
+
+        return redirect('/dashboard/gallery_dashboard')->with(['success_delivery' => true]);
+    }
+
+
     public function showGallery($id)
     {
         $gallery = Gallery::find($id);
@@ -46,6 +66,12 @@ class GalleryController extends Controller
                 return abort('404');
             }
         }
+    }
+
+    public function destroyGallery($id) {
+        $gallery = Gallery::find($id);
+        $gallery->delete();
+        return redirect('dashboard/gallery_dashboard')->with(['success_delivery'=>true]);
     }
 }
 

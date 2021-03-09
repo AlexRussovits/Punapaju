@@ -14,6 +14,23 @@ class SponsorController extends Controller
         return view('dashboard.sponsor_dashboard', compact('sponsors'));
     }
 
+    public function showCreateSponsor() {
+        return view('dashboard.create.sponsor_create');
+    }
+
+    public function createSponsor(Request $request) {
+        $img = $request->file('img')->store('public');
+        $pos = stripos($img , '/');
+        $img = substr($img , $pos, strlen($img));
+        $img  = 'storage' . $img ;
+
+        Sponsor::create([
+            'img' => $img,
+        ]);
+        return redirect('/dashboard/sponsor_dashboard')->with(['success_delivery' => true]);
+    }
+
+
     public function showSponsor($id) {
         $sponsor = Sponsor::find($id);
         if(!empty($sponsor)) {
@@ -44,6 +61,12 @@ class SponsorController extends Controller
                 return abort('404');
             }
         }
+    }
+
+    public function destroySponsor($id) {
+        $sponsor = Sponsor::find($id);
+        $sponsor->delete();
+        return redirect('dashboard/sponsor_dashboard')->with(['success_delivery' => true]);
     }
 }
 

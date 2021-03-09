@@ -42,14 +42,9 @@ class AppointmentController extends Controller
         }
     }
 
-    public function destroyAppointment(Appointment $appointment) {
-
-        if(!empty($appointment)) {
-            $appointment->delete();
-            return redirect('/dashboard/appointment_dashboard')->with(['success_delivery'=>true]);
-        } else{
-            return abort('404');
-        }
-        dd('ok');
+    public function destroyAppointment($id) {
+        $appointment = Appointment::find($id);
+        $appointment->delete();
+        return redirect('/dashboard/appointment_dashboard')->with(['success_delivery'=>true]);
     }
 }
